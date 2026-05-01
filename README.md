@@ -92,6 +92,7 @@ Skipping these steps may result in:
 The easiest way to run the full stack is via Docker Compose:
 
 ```bash
+yarn build
 yarn docker:pull
 yarn docker:build
 yarn docker:up

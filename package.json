@@ -1,0 +1,31 @@
+{
+  "name": "velora",
+  "private": true,
+  "packageManager": "yarn@4.14.1",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "set-version": "yarn set version latest",
+    "upgrade": "yarn upgrade-interactive",
+    "build": "turbo run build --concurrency=3",
+    "dev": "turbo run dev --concurrency=3",
+    "docker:pull": "docker pull node:24-alpine && docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml pull",
+    "docker:build": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml build",
+    "docker:up": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml up -d",
+    "docker:down": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml down",
+    "docker:start": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml start",
+    "docker:stop": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml stop",
+    "docker:restart": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml restart",
+    "docker:push": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml push",
+    "docker:rm": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml rm",
+    "kubernetes:mongo-secret": "kubectl create secret generic mongo-configuration --from-env-file=./server/.env.production.local",
+    "kubernetes:mongo-configmap": "kubectl create configmap mongo-initialisation --from-file=./deploy/initialisation/mongo",
+    "kubernetes:apply": "kubectl apply -k ./deploy/kubernetes/pv && kubectl apply -k ./deploy/kubernetes/base",
+    "kubernetes:delete": "kubectl delete -k ./deploy/kubernetes/base && kubectl delete -k ./deploy/kubernetes/pv"
+  },
+  "devDependencies": {
+    "turbo": "^2.9.6"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js de Vercel - El framework de React"
+  },
+  "skipToContent": "Saltar al contenido",
+  "header": {
+    "showcase": "Vitrina",
+    "docs": "Documentos",
+    "blog": "Blog",
+    "templates": "Plantillas",
+    "enterprise": "Empresa",
+    "deploy": "Desplegar",
+    "learn": "Aprender",
+    "nextjsCommerce": "Next.js Comercio",
+    "github": "Github",
+    "search": {
+      "button": "Buscar documentación...",
+      "input": "¿Qué estás buscando?",
+      "introduction": "Introducción",
+      "gettingStarted": "Primeros pasos",
+      "appRouter": "Enrutador de la app",
+      "architecture": "Arquitectura",
+      "pagesRouter": "Enrutador de páginas",
+      "apiReference": "Referencia API",
+      "accessibility": "Accesibilidad",
+      "activeTabs": {
+        "app": "App",
+        "pages": "Páginas"
+      }
+    }
+  },
+  "main": {
+    "title": "El framework React para la Web",
+    "descriptionStart": "Utilizado por algunas de las empresas más grandes del mundo, Next.js permite crear",
+    "descriptionHighlight": "aplicaciones web de alta calidad",
+    "descriptionEnd": "con el poder de los componentes de React.",
+    "started": "Comenzar",
+    "learn": "Aprender Next.js"
+  },
+  "footer": {
+    "resources": "Recursos",
+    "docs": "Documentación",
+    "supportPolicy": "Política de soporte",
+    "learn": "Aprender",
+    "showcase": "Demostración",
+    "blog": "Blog",
+    "team": "Equipo",
+    "analytics": "Analítica",
+    "nextjsConf": "Conferencia Next.js",
+    "previews": "Vistas previas",
+    "evals": "Evaluaciones",
+    "more": "Más",
+    "nextjsCommerce": "Next.js Comercio",
+    "contactSales": "Contactar Ventas",
+    "community": "Comunidad",
+    "github": "GitHub",
+    "releases": "Lanzamientos",
+    "telemetry": "Telemetría",
+    "governance": "Gobernanza",
+    "locale": "Idioma y región",
+    "aboutVercel": "Acerca de Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Software de código abierto",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Legal",
+    "privacyPolicy": "Política de privacidad",
+    "cookiePreferences": "Preferencias de cookies",
+    "subscribeSuccess": "¡Gracias por suscribirte!",
+    "subscribeTitle": "Suscríbete a nuestro boletín",
+    "subscribeDescription": "Mantente al día con nuevos lanzamientos, funciones, guías y estudios de caso.",
+    "subscribeButton": "Suscribirse"
+  },
+  "cookieBanner": {
+    "message": "Este sitio utiliza tecnologías de seguimiento. Puedes aceptar o rechazar el uso de estas tecnologías.",
+    "deny": "Rechazar",
+    "acceptAll": "Aceptar todo",
+    "settings": "Configuración de consentimiento"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Esencial",
+      "description": "Las cookies y servicios esenciales se usan para habilitar funciones básicas del sitio web, como garantizar la seguridad del sitio."
+    },
+    "marketing": {
+      "name": "Marketing",
+      "description": "Las cookies y servicios de marketing se usan para entregar anuncios personalizados, promociones y ofertas. Estas tecnologías permiten campañas de marketing y publicidad dirigidas mediante la recopilación de información sobre intereses, preferencias y actividades en línea de los usuarios."
+    },
+    "analytics": {
+      "name": "Analítica",
+      "description": "Las cookies y servicios de analítica se usan para recopilar información estadística sobre cómo los visitantes interactúan con el sitio web. Estas tecnologías ofrecen información sobre el uso del sitio, el comportamiento de los visitantes y el rendimiento para comprender, mejorar el sitio y mejorar la experiencia del usuario."
+    },
+    "functional": {
+      "name": "Funcional",
+      "description": "Las cookies y servicios funcionales se usan para ofrecer funcionalidades mejoradas y personalizadas. Estas tecnologías proporcionan funciones adicionales y mejoran la experiencia del usuario, como recordar las preferencias de idioma, tamaños de fuente, selección de región y diseños personalizados. Rechazar estas cookies puede hacer que ciertos servicios o funcionalidades del sitio web no estén disponibles."
+    },
+    "title": "Tu Privacidad",
+    "description": "Este sitio utiliza tecnologías de seguimiento. Puedes aceptar o rechazar el uso de estas tecnologías.",
+    "deny": "Rechazar",
+    "acceptAll": "Aceptar todo",
+    "save": "Guardar",
+    "privacyPolicy": "Lee cómo manejamos tus datos en nuestra",
+    "privacyPolicyLink": "Política de Privacidad"
+  }
+}

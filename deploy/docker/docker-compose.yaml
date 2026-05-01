@@ -1,0 +1,56 @@
+services:
+  velora-mongo:
+    image: mongo:latest
+    container_name: velora-mongo
+    ports:
+      - "${MONGO_PORT}:27017"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_ROOT_PASSWORD}
+      - MONGO_INITDB_DATABASE=${MONGO_DATABASE}
+    volumes:
+      - velora-mongo-volume:/data/db
+      - ../initialisation/mongo:/docker-entrypoint-initdb.d
+    networks:
+      - velora-network
+    restart: no
+
+  velora-server:
+    image: m11615/velora-server:latest
+    build:
+      context: ../..
+      dockerfile: ./deploy/docker/server/Dockerfile
+    container_name: velora-server
+    ports:
+      - "3000:3000"
+    networks:
+      - velora-network
+    depends_on:
+      - velora-mongo
+    restart: no
+
+  velora-client:
+    image: m11615/velora-client:latest
+    build:
+      context: ../..
+      dockerfile: ./deploy/docker/client/Dockerfile
+    container_name: velora-client
+    ports:
+      - "3001:3001"
+    networks:
+      - velora-network
+    extra_hosts:
+      - "server:host-gateway"
+    depends_on:
+      - velora-server
+    restart: no
+
+volumes:
+  velora-mongo-volume:
+    name: velora-mongo-volume
+    driver: local
+
+networks:
+  velora-network:
+    name: velora-network
+    driver: bridge

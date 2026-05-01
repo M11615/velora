@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js от Vercel - React Framework"
+  },
+  "skipToContent": "Прескочи към съдържанието",
+  "header": {
+    "showcase": "Демонстрации",
+    "docs": "Документация",
+    "blog": "Блог",
+    "templates": "Шаблони",
+    "enterprise": "Предприятие",
+    "deploy": "Деплой",
+    "learn": "Научете",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "Търсене в документацията...",
+      "input": "Какво търсите?",
+      "introduction": "Въведение",
+      "gettingStarted": "Първи стъпки",
+      "appRouter": "App Router",
+      "architecture": "Архитектура",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "Достъпност",
+      "activeTabs": {
+        "app": "Приложение",
+        "pages": "Страници"
+      }
+    }
+  },
+  "main": {
+    "title": "React Framework за уеб",
+    "descriptionStart": "Използван от някои от най-големите компании в света, Next.js ви позволява да създавате",
+    "descriptionHighlight": "уеб приложения с високо качество",
+    "descriptionEnd": "с мощта на React компонентите.",
+    "started": "Започнете",
+    "learn": "Научете Next.js"
+  },
+  "footer": {
+    "resources": "Ресурси",
+    "docs": "Документация",
+    "supportPolicy": "Политика за поддръжка",
+    "learn": "Научете",
+    "showcase": "Демонстрации",
+    "blog": "Блог",
+    "team": "Екип",
+    "analytics": "Анализи",
+    "nextjsConf": "Next.js Conf",
+    "previews": "Превюта",
+    "evals": "Оценки",
+    "more": "Още",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "Свържете се с продажби",
+    "community": "Общество",
+    "github": "Github",
+    "releases": "Версии",
+    "telemetry": "Телеметрия",
+    "governance": "Управление",
+    "locale": "Език и регион",
+    "aboutVercel": "За Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Софтуер с отворен код",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Правна информация",
+    "privacyPolicy": "Политика за поверителност",
+    "cookiePreferences": "Настройки на бисквитки",
+    "subscribeSuccess": "Благодарим за абонамента!",
+    "subscribeTitle": "Абонирайте се за нашия бюлетин",
+    "subscribeDescription": "Бъдете в течение с нови версии и функции, ръководства и казуси.",
+    "subscribeButton": "Абонирай се"
+  },
+  "cookieBanner": {
+    "message": "Този сайт използва технологии за проследяване. Можете да се съгласите или да откажете използването им.",
+    "deny": "Откажи",
+    "acceptAll": "Приеми всички",
+    "settings": "Настройки на съгласието"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Основни",
+      "description": "Основните бисквитки и услуги се използват за включване на основни функции на сайта и за осигуряване на безопасността му."
+    },
+    "marketing": {
+      "name": "Маркетинг",
+      "description": "Маркетинговите бисквитки и услуги се използват за предоставяне на персонализирани реклами и промоции."
+    },
+    "analytics": {
+      "name": "Анализи",
+      "description": "Аналитичните бисквитки и услуги се използват за събиране на статистическа информация за взаимодействието на посетителите със сайта."
+    },
+    "functional": {
+      "name": "Функционални",
+      "description": "Функционалните бисквитки и услуги предоставят подобрени и персонализирани функции, като запомняне на език, размер на шрифт, регион и персонализирани оформления."
+    },
+    "title": "Вашата поверителност",
+    "description": "Този сайт използва технологии за проследяване. Можете да се съгласите или да откажете използването им.",
+    "deny": "Откажи",
+    "acceptAll": "Приеми всички",
+    "save": "Запази",
+    "privacyPolicy": "Прочетете как обработваме вашите данни в нашата",
+    "privacyPolicyLink": "Политика за поверителност"
+  }
+}

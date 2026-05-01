@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js bởi Vercel - Framework React"
+  },
+  "skipToContent": "Chuyển đến nội dung",
+  "header": {
+    "showcase": "Trình diễn",
+    "docs": "Tài liệu",
+    "blog": "Blog",
+    "templates": "Mẫu",
+    "enterprise": "Doanh nghiệp",
+    "deploy": "Triển khai",
+    "learn": "Học",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "Tìm kiếm tài liệu...",
+      "input": "Bạn đang tìm gì?",
+      "introduction": "Giới thiệu",
+      "gettingStarted": "Bắt đầu",
+      "appRouter": "App Router",
+      "architecture": "Kiến trúc",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "Khả năng truy cập",
+      "activeTabs": {
+        "app": "App",
+        "pages": "Pages"
+      }
+    }
+  },
+  "main": {
+    "title": "Framework React cho web",
+    "descriptionStart": "Được sử dụng bởi một số công ty lớn nhất thế giới, Next.js giúp bạn tạo",
+    "descriptionHighlight": "ứng dụng web chất lượng cao",
+    "descriptionEnd": "với sức mạnh của các thành phần React.",
+    "started": "Bắt đầu",
+    "learn": "Học Next.js"
+  },
+  "footer": {
+    "resources": "Tài nguyên",
+    "docs": "Tài liệu",
+    "supportPolicy": "Chính sách hỗ trợ",
+    "learn": "Học",
+    "showcase": "Trình diễn",
+    "blog": "Blog",
+    "team": "Nhóm",
+    "analytics": "Phân tích",
+    "nextjsConf": "Next.js Conf",
+    "previews": "Xem trước",
+    "evals": "Đánh giá",
+    "more": "Thêm",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "Liên hệ bán hàng",
+    "community": "Cộng đồng",
+    "github": "Github",
+    "releases": "Phiên bản",
+    "telemetry": "Thu thập dữ liệu",
+    "governance": "Quản trị",
+    "locale": "Ngôn ngữ & Khu vực",
+    "aboutVercel": "Về Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Phần mềm mã nguồn mở",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Pháp lý",
+    "privacyPolicy": "Chính sách bảo mật",
+    "cookiePreferences": "Tùy chọn cookie",
+    "subscribeSuccess": "Cảm ơn bạn đã đăng ký!",
+    "subscribeTitle": "Đăng ký nhận bản tin",
+    "subscribeDescription": "Cập nhật về các phiên bản và tính năng mới, hướng dẫn và các nghiên cứu điển hình.",
+    "subscribeButton": "Đăng ký"
+  },
+  "cookieBanner": {
+    "message": "Trang web này sử dụng công nghệ theo dõi. Bạn có thể chọn tham gia hoặc từ chối sử dụng các công nghệ này.",
+    "deny": "Từ chối",
+    "acceptAll": "Chấp nhận tất cả",
+    "settings": "Cài đặt quyền riêng tư"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Cần thiết",
+      "description": "Cookie và dịch vụ cần thiết được sử dụng để kích hoạt các tính năng cốt lõi của trang web, đảm bảo an toàn."
+    },
+    "marketing": {
+      "name": "Marketing",
+      "description": "Cookie và dịch vụ marketing được sử dụng để cung cấp quảng cáo, khuyến mãi và ưu đãi cá nhân hóa."
+    },
+    "analytics": {
+      "name": "Phân tích",
+      "description": "Cookie và dịch vụ phân tích được sử dụng để thu thập thông tin thống kê về cách người dùng tương tác với trang web."
+    },
+    "functional": {
+      "name": "Chức năng",
+      "description": "Cookie và dịch vụ chức năng cung cấp trải nghiệm nâng cao, ghi nhớ ngôn ngữ, kích thước chữ, lựa chọn khu vực và bố cục tùy chỉnh."
+    },
+    "title": "Quyền riêng tư của bạn",
+    "description": "Trang web này sử dụng công nghệ theo dõi. Bạn có thể chọn tham gia hoặc từ chối sử dụng các công nghệ này.",
+    "deny": "Từ chối",
+    "acceptAll": "Chấp nhận tất cả",
+    "save": "Lưu",
+    "privacyPolicy": "Đọc cách chúng tôi xử lý dữ liệu của bạn trong",
+    "privacyPolicyLink": "Chính sách bảo mật"
+  }
+}

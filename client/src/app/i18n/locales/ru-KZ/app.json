@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js от Vercel - React Framework"
+  },
+  "skipToContent": "Перейти к содержимому",
+  "header": {
+    "showcase": "Примеры",
+    "docs": "Документация",
+    "blog": "Блог",
+    "templates": "Шаблоны",
+    "enterprise": "Корпорация",
+    "deploy": "Развернуть",
+    "learn": "Изучить",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "Поиск по документации...",
+      "input": "Что вы ищете?",
+      "introduction": "Введение",
+      "gettingStarted": "Начало работы",
+      "appRouter": "App Router",
+      "architecture": "Архитектура",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "Доступность",
+      "activeTabs": {
+        "app": "Приложение",
+        "pages": "Страницы"
+      }
+    }
+  },
+  "main": {
+    "title": "React Framework для веба",
+    "descriptionStart": "Используется некоторыми из крупнейших компаний мира, Next.js позволяет создавать",
+    "descriptionHighlight": "высококачественные веб-приложения",
+    "descriptionEnd": "с мощью компонентов React.",
+    "started": "Начать",
+    "learn": "Изучить Next.js"
+  },
+  "footer": {
+    "resources": "Ресурсы",
+    "docs": "Документация",
+    "supportPolicy": "Политика поддержки",
+    "learn": "Изучить",
+    "showcase": "Примеры",
+    "blog": "Блог",
+    "team": "Команда",
+    "analytics": "Аналитика",
+    "nextjsConf": "Next.js Conf",
+    "previews": "Превью",
+    "evals": "Оценки",
+    "more": "Еще",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "Связаться с отделом продаж",
+    "community": "Сообщество",
+    "github": "Github",
+    "releases": "Релизы",
+    "telemetry": "Телеметрия",
+    "governance": "Управление",
+    "locale": "Язык и регион",
+    "aboutVercel": "О Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Программное обеспечение с открытым исходным кодом",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Юридическая информация",
+    "privacyPolicy": "Политика конфиденциальности",
+    "cookiePreferences": "Настройки cookie",
+    "subscribeSuccess": "Спасибо за подписку!",
+    "subscribeTitle": "Подпишитесь на нашу рассылку",
+    "subscribeDescription": "Будьте в курсе новых релизов и функций, руководств и кейсов.",
+    "subscribeButton": "Подписаться"
+  },
+  "cookieBanner": {
+    "message": "Этот сайт использует технологии отслеживания. Вы можете согласиться или отказаться от их использования.",
+    "deny": "Отказаться",
+    "acceptAll": "Принять все",
+    "settings": "Настройки согласия"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Основные",
+      "description": "Основные cookie и сервисы используются для включения ключевых функций сайта и обеспечения безопасности."
+    },
+    "marketing": {
+      "name": "Маркетинг",
+      "description": "Маркетинговые cookie и сервисы используются для предоставления персонализированной рекламы и предложений."
+    },
+    "analytics": {
+      "name": "Аналитика",
+      "description": "Аналитические cookie и сервисы используются для сбора статистической информации о взаимодействии пользователей с сайтом."
+    },
+    "functional": {
+      "name": "Функциональные",
+      "description": "Функциональные cookie и сервисы предоставляют расширенные и персонализированные функции, такие как запоминание языка, размера шрифта, региона и индивидуальных макетов."
+    },
+    "title": "Ваша конфиденциальность",
+    "description": "Этот сайт использует технологии отслеживания. Вы можете согласиться или отказаться от их использования.",
+    "deny": "Отказаться",
+    "acceptAll": "Принять все",
+    "save": "Сохранить",
+    "privacyPolicy": "Прочитайте, как мы обрабатываем ваши данные в нашей",
+    "privacyPolicyLink": "Политике конфиденциальности"
+  }
+}

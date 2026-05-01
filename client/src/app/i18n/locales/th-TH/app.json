@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js โดย Vercel - เฟรมเวิร์ก React"
+  },
+  "skipToContent": "ข้ามไปยังเนื้อหา",
+  "header": {
+    "showcase": "แสดงตัวอย่าง",
+    "docs": "เอกสาร",
+    "blog": "บล็อก",
+    "templates": "เทมเพลต",
+    "enterprise": "องค์กร",
+    "deploy": "ปรับใช้",
+    "learn": "เรียนรู้",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "ค้นหาเอกสาร...",
+      "input": "คุณกำลังค้นหาอะไร?",
+      "introduction": "แนะนำ",
+      "gettingStarted": "เริ่มต้น",
+      "appRouter": "App Router",
+      "architecture": "สถาปัตยกรรม",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "การเข้าถึง",
+      "activeTabs": {
+        "app": "แอป",
+        "pages": "หน้า"
+      }
+    }
+  },
+  "main": {
+    "title": "เฟรมเวิร์ก React สำหรับเว็บ",
+    "descriptionStart": "ใช้โดยบริษัทชั้นนำของโลก Next.js ช่วยให้คุณสร้าง",
+    "descriptionHighlight": "เว็บแอปพลิเคชันคุณภาพสูง",
+    "descriptionEnd": "ด้วยพลังของคอมโพเนนต์ React",
+    "started": "เริ่มต้น",
+    "learn": "เรียนรู้ Next.js"
+  },
+  "footer": {
+    "resources": "ทรัพยากร",
+    "docs": "เอกสาร",
+    "supportPolicy": "นโยบายสนับสนุน",
+    "learn": "เรียนรู้",
+    "showcase": "แสดงตัวอย่าง",
+    "blog": "บล็อก",
+    "team": "ทีม",
+    "analytics": "การวิเคราะห์",
+    "nextjsConf": "Next.js Conf",
+    "previews": "ตัวอย่าง",
+    "evals": "การประเมิน",
+    "more": "เพิ่มเติม",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "ติดต่อฝ่ายขาย",
+    "community": "ชุมชน",
+    "github": "Github",
+    "releases": "เวอร์ชัน",
+    "telemetry": "การวัดผล",
+    "governance": "ธรรมาภิบาล",
+    "locale": "ภาษา & ภูมิภาค",
+    "aboutVercel": "เกี่ยวกับ Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "ซอฟต์แวร์โอเพนซอร์ส",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "กฎหมาย",
+    "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+    "cookiePreferences": "การตั้งค่าคุกกี้",
+    "subscribeSuccess": "ขอบคุณที่สมัคร!",
+    "subscribeTitle": "สมัครรับจดหมายข่าวของเรา",
+    "subscribeDescription": "รับข้อมูลเกี่ยวกับฟีเจอร์ใหม่ คู่มือ และกรณีศึกษา",
+    "subscribeButton": "สมัคร"
+  },
+  "cookieBanner": {
+    "message": "เว็บไซต์นี้ใช้เทคโนโลยีติดตาม คุณสามารถยอมรับหรือปฏิเสธการใช้เทคโนโลยีเหล่านี้ได้",
+    "deny": "ปฏิเสธ",
+    "acceptAll": "ยอมรับทั้งหมด",
+    "settings": "การตั้งค่าความยินยอม"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "สำคัญ",
+      "description": "คุกกี้และบริการที่สำคัญใช้เพื่อเปิดใช้งานฟีเจอร์หลักของเว็บไซต์ เช่น การรักษาความปลอดภัยของเว็บไซต์"
+    },
+    "marketing": {
+      "name": "การตลาด",
+      "description": "คุกกี้และบริการด้านการตลาดใช้เพื่อแสดงโฆษณาและโปรโมชั่นที่ปรับตามบุคคล เทคโนโลยีเหล่านี้ช่วยให้สามารถโฆษณาแบบกำหนดเป้าหมายโดยรวบรวมข้อมูลความสนใจและกิจกรรมออนไลน์ของผู้ใช้"
+    },
+    "analytics": {
+      "name": "การวิเคราะห์",
+      "description": "คุกกี้และบริการด้านการวิเคราะห์ใช้เพื่อรวบรวมข้อมูลสถิติว่าผู้เยี่ยมชมมีปฏิสัมพันธ์กับเว็บไซต์อย่างไร เพื่อปรับปรุงประสบการณ์ผู้ใช้"
+    },
+    "functional": {
+      "name": "ฟังก์ชัน",
+      "description": "คุกกี้และบริการฟังก์ชันใช้เพื่อมอบฟังก์ชันการใช้งานที่ปรับปรุงและปรับแต่งได้ เช่น การจำค่าภาษา ขนาดตัวอักษร ภูมิภาค และรูปแบบที่ปรับแต่งเอง"
+    },
+    "title": "ความเป็นส่วนตัวของคุณ",
+    "description": "เว็บไซต์นี้ใช้เทคโนโลยีติดตาม คุณสามารถยอมรับหรือปฏิเสธการใช้เทคโนโลยีเหล่านี้ได้",
+    "deny": "ปฏิเสธ",
+    "acceptAll": "ยอมรับทั้งหมด",
+    "save": "บันทึก",
+    "privacyPolicy": "อ่านข้อมูลเกี่ยวกับวิธีการจัดการข้อมูลของคุณใน",
+    "privacyPolicyLink": "นโยบายความเป็นส่วนตัว"
+  }
+}

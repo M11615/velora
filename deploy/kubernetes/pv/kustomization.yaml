@@ -1,0 +1,3 @@
+resources:
+  - ./mongo/pv.yaml
+  - ./mongo/pvc.yaml

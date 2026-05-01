@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js بواسطة Vercel - إطار عمل React"
+  },
+  "skipToContent": "تخطي إلى المحتوى",
+  "header": {
+    "showcase": "عرض",
+    "docs": "الوثائق",
+    "blog": "المدونة",
+    "templates": "القوالب",
+    "enterprise": "المؤسسات",
+    "deploy": "نشر",
+    "learn": "تعلم",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "ابحث في الوثائق...",
+      "input": "ماذا تبحث عنه؟",
+      "introduction": "مقدمة",
+      "gettingStarted": "البدء",
+      "appRouter": "App Router",
+      "architecture": "البنية",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "إمكانية الوصول",
+      "activeTabs": {
+        "app": "التطبيق",
+        "pages": "الصفحات"
+      }
+    }
+  },
+  "main": {
+    "title": "إطار عمل React للويب",
+    "descriptionStart": "يستخدم من قبل بعض أكبر الشركات في العالم، يتيح لك Next.js إنشاء",
+    "descriptionHighlight": "تطبيقات ويب عالية الجودة",
+    "descriptionEnd": "بقوة مكونات React.",
+    "started": "البدء",
+    "learn": "تعلم Next.js"
+  },
+  "footer": {
+    "resources": "الموارد",
+    "docs": "الوثائق",
+    "supportPolicy": "سياسة الدعم",
+    "learn": "تعلم",
+    "showcase": "عرض",
+    "blog": "المدونة",
+    "team": "الفريق",
+    "analytics": "التحليلات",
+    "nextjsConf": "Next.js Conf",
+    "previews": "المعاينات",
+    "evals": "التقييمات",
+    "more": "المزيد",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "اتصل بالمبيعات",
+    "community": "المجتمع",
+    "github": "Github",
+    "releases": "الإصدارات",
+    "telemetry": "القياسات عن بعد",
+    "governance": "الحوكمة",
+    "locale": "اللغة والمنطقة",
+    "aboutVercel": "حول Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "برمجيات مفتوحة المصدر",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "القانونية",
+    "privacyPolicy": "سياسة الخصوصية",
+    "cookiePreferences": "تفضيلات الكوكيز",
+    "subscribeSuccess": "شكرًا لاشتراكك!",
+    "subscribeTitle": "اشترك في النشرة الإخبارية",
+    "subscribeDescription": "ابقَ على اطلاع بالإصدارات والميزات الجديدة، الأدلة، ودراسات الحالة.",
+    "subscribeButton": "اشترك"
+  },
+  "cookieBanner": {
+    "message": "يستخدم هذا الموقع تقنيات التتبع. يمكنك الموافقة أو رفض استخدام هذه التقنيات.",
+    "deny": "رفض",
+    "acceptAll": "الموافقة على الكل",
+    "settings": "إعدادات الموافقة"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "أساسية",
+      "description": "يتم استخدام الكوكيز والخدمات الأساسية لتمكين ميزات الموقع الأساسية وضمان أمان الموقع."
+    },
+    "marketing": {
+      "name": "تسويق",
+      "description": "يتم استخدام كوكيز التسويق والخدمات لتقديم إعلانات مخصصة وعروض ترويجية. تمكن هذه التقنيات الإعلانات المستهدفة وجمع معلومات حول اهتمامات وتفضيلات المستخدمين."
+    },
+    "analytics": {
+      "name": "تحليلات",
+      "description": "يتم استخدام كوكيز التحليلات والخدمات لجمع معلومات إحصائية حول كيفية تفاعل الزوار مع الموقع."
+    },
+    "functional": {
+      "name": "وظيفية",
+      "description": "تُستخدم الكوكيز والخدمات الوظيفية لتقديم ميزات محسنة ومخصصة، مثل تذكر تفضيلات اللغة وحجم الخط والمنطقة والتخطيطات المخصصة."
+    },
+    "title": "خصوصيتك",
+    "description": "يستخدم هذا الموقع تقنيات التتبع. يمكنك الموافقة أو رفض استخدام هذه التقنيات.",
+    "deny": "رفض",
+    "acceptAll": "الموافقة على الكل",
+    "save": "حفظ",
+    "privacyPolicy": "اقرأ كيفية تعاملنا مع بياناتك في",
+    "privacyPolicyLink": "سياسة الخصوصية"
+  }
+}

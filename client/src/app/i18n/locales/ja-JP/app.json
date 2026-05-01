@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Vercel による Next.js － React フレームワーク"
+  },
+  "skipToContent": "コンテンツにスキップ",
+  "header": {
+    "showcase": "ショーケース",
+    "docs": "ドキュメント",
+    "blog": "ブログ",
+    "templates": "テンプレート",
+    "enterprise": "エンタープライズ",
+    "deploy": "デプロイ",
+    "learn": "学習",
+    "nextjsCommerce": "Next.js コマース",
+    "github": "GitHub",
+    "search": {
+      "button": "ドキュメントを検索...",
+      "input": "何をお探しですか？",
+      "introduction": "紹介",
+      "gettingStarted": "はじめに",
+      "appRouter": "App ルーター",
+      "architecture": "アーキテクチャ",
+      "pagesRouter": "Pages ルーター",
+      "apiReference": "API リファレンス",
+      "accessibility": "アクセシビリティ",
+      "activeTabs": {
+        "app": "アプリ",
+        "pages": "ページ"
+      }
+    }
+  },
+  "main": {
+    "title": "Web のための React フレームワーク",
+    "descriptionStart": "Next.js は世界中の大手企業に採用され、",
+    "descriptionHighlight": "高品質な Web アプリケーション",
+    "descriptionEnd": "を React コンポーネントの力で構築できます。",
+    "started": "始める",
+    "learn": "Next.js を学ぶ"
+  },
+  "footer": {
+    "resources": "リソース",
+    "docs": "ドキュメント",
+    "supportPolicy": "サポートポリシー",
+    "learn": "学ぶ",
+    "showcase": "ショーケース",
+    "blog": "ブログ",
+    "team": "チーム",
+    "analytics": "アナリティクス",
+    "nextjsConf": "Next.js カンファレンス",
+    "previews": "プレビュー",
+    "evals": "評価",
+    "more": "その他",
+    "nextjsCommerce": "Next.js コマース",
+    "contactSales": "営業に連絡",
+    "community": "コミュニティ",
+    "github": "GitHub",
+    "releases": "リリース",
+    "telemetry": "テレメトリー",
+    "governance": "ガバナンス",
+    "locale": "言語と地域",
+    "aboutVercel": "Vercelについて",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "オープンソースソフトウェア",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "法的情報",
+    "privacyPolicy": "プライバシーポリシー",
+    "cookiePreferences": "Cookieの設定",
+    "subscribeSuccess": "ご購読ありがとうございます！",
+    "subscribeTitle": "ニュースレターを購読する",
+    "subscribeDescription": "新しいリリースや機能、ガイド、ケーススタディの最新情報をお届けします。",
+    "subscribeButton": "購読する"
+  },
+  "cookieBanner": {
+    "message": "このサイトではトラッキング技術を使用しています。これらの技術の使用に同意または拒否できます。",
+    "deny": "拒否",
+    "acceptAll": "すべて許可",
+    "settings": "同意の設定"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "必須",
+      "description": "必須のクッキーおよびサービスは、ウェブサイトのセキュリティ確保など、コア機能を有効にするために使用されます。"
+    },
+    "marketing": {
+      "name": "マーケティング",
+      "description": "マーケティング用のクッキーおよびサービスは、パーソナライズされた広告、プロモーション、オファーを提供するために使用されます。これらの技術は、ユーザーの興味、好み、オンライン活動に関する情報を収集し、ターゲット広告やマーケティングキャンペーンを実現します。"
+    },
+    "analytics": {
+      "name": "分析",
+      "description": "分析用のクッキーおよびサービスは、訪問者がウェブサイトとどのようにやり取りしているかに関する統計情報を収集するために使用されます。これらの技術は、サイトの利用状況、訪問者の行動、パフォーマンスについての洞察を提供し、改善とユーザー体験の向上に役立ちます。"
+    },
+    "functional": {
+      "name": "機能的",
+      "description": "機能的なクッキーおよびサービスは、より高度で個別化された機能を提供するために使用されます。これらの技術は、言語の選択、フォントサイズ、地域の選択、カスタムレイアウトなどを記憶することで、追加機能や改善されたユーザー体験を提供します。これらのクッキーを無効にすると、一部のサービスまたは機能が使用できなくなる可能性があります。"
+    },
+    "title": "プライバシーについて",
+    "description": "このサイトではトラッキング技術を使用しています。これらの技術の使用に同意または拒否できます。",
+    "deny": "拒否",
+    "acceptAll": "すべて許可",
+    "save": "保存",
+    "privacyPolicy": "当社がデータをどのように扱っているかについては、",
+    "privacyPolicyLink": "プライバシーポリシーをご覧ください"
+  }
+}

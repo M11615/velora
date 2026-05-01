@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js על ידי Vercel - מסגרת React"
+  },
+  "skipToContent": "דילוג לתוכן",
+  "header": {
+    "showcase": "תצוגות",
+    "docs": "תיעוד",
+    "blog": "בלוג",
+    "templates": "תבניות",
+    "enterprise": "ארגון",
+    "deploy": "פריסה",
+    "learn": "ללמוד",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "חפש בתיעוד...",
+      "input": "מה אתה מחפש?",
+      "introduction": "מבוא",
+      "gettingStarted": "התחלה",
+      "appRouter": "App Router",
+      "architecture": "ארכיטקטורה",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "נגישות",
+      "activeTabs": {
+        "app": "אפליקציה",
+        "pages": "דפים"
+      }
+    }
+  },
+  "main": {
+    "title": "מסגרת React לאינטרנט",
+    "descriptionStart": "משמשת על ידי כמה מהחברות הגדולות בעולם, Next.js מאפשרת ליצור",
+    "descriptionHighlight": "יישומי אינטרנט איכותיים",
+    "descriptionEnd": "בעזרת רכיבי React.",
+    "started": "התחל",
+    "learn": "ללמוד Next.js"
+  },
+  "footer": {
+    "resources": "משאבים",
+    "docs": "תיעוד",
+    "supportPolicy": "מדיניות תמיכה",
+    "learn": "ללמוד",
+    "showcase": "תצוגות",
+    "blog": "בלוג",
+    "team": "צוות",
+    "analytics": "אנליטיקה",
+    "nextjsConf": "Next.js Conf",
+    "previews": "תצוגות מקדימות",
+    "evals": "הערכות",
+    "more": "עוד",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "צור קשר עם מכירות",
+    "community": "קהילה",
+    "github": "Github",
+    "releases": "גרסאות",
+    "telemetry": "טלאמטריה",
+    "governance": "ממשל",
+    "locale": "שפה ואזור",
+    "aboutVercel": "אודות Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "תוכנה בקוד פתוח",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "מידע משפטי",
+    "privacyPolicy": "מדיניות פרטיות",
+    "cookiePreferences": "הגדרות עוגיות",
+    "subscribeSuccess": "תודה שנרשמת!",
+    "subscribeTitle": "הירשם לניוזלטר שלנו",
+    "subscribeDescription": "הישאר מעודכן עם שחרורים ותכונות חדשות, מדריכים ומקרי בוחן.",
+    "subscribeButton": "הירשם"
+  },
+  "cookieBanner": {
+    "message": "אתר זה משתמש בטכנולוגיות מעקב. אתה יכול להסכים או לסרב לשימוש בטכנולוגיות אלו.",
+    "deny": "סרב",
+    "acceptAll": "קבל הכל",
+    "settings": "הגדרות הסכמה"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "חיוני",
+      "description": "עוגיות ושירותים חיוניים משמשים לאפשר פונקציות בסיסיות באתר ולשמור על בטיחות האתר."
+    },
+    "marketing": {
+      "name": "שיווק",
+      "description": "עוגיות ושירותי שיווק משמשים להצגת פרסומות מותאמות אישית, מבצעים והצעות. טכנולוגיות אלו מאפשרות פרסום ממוקד על ידי איסוף מידע על תחומי עניין והעדפות של משתמשים."
+    },
+    "analytics": {
+      "name": "אנליטיקה",
+      "description": "עוגיות ושירותי אנליטיקה משמשים לאיסוף מידע סטטיסטי על האופן שבו מבקרים משתמשים באתר. טכנולוגיות אלו מספקות תובנות על שימוש באתר, התנהגות מבקרים וביצועי האתר."
+    },
+    "functional": {
+      "name": "פונקציונליות",
+      "description": "עוגיות ושירותים פונקציונליים משמשים לספק פונקציות מותאמות אישית ומתקדמות, כגון זכירת העדפות שפה, גודל גופן, בחירת אזור ומבנים מותאמים."
+    },
+    "title": "הפרטיות שלך",
+    "description": "אתר זה משתמש בטכנולוגיות מעקב. אתה יכול להסכים או לסרב לשימוש בטכנולוגיות אלו.",
+    "deny": "סרב",
+    "acceptAll": "קבל הכל",
+    "save": "שמור",
+    "privacyPolicy": "קרא כיצד אנו מטפלים בנתונים שלך ב",
+    "privacyPolicyLink": "מדיניות הפרטיות"
+  }
+}

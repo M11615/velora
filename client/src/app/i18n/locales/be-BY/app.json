@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js ад Vercel - React Framework"
+  },
+  "skipToContent": "Перайсці да змесціва",
+  "header": {
+    "showcase": "Дэманстрацыя",
+    "docs": "Дакументацыя",
+    "blog": "Блог",
+    "templates": "Шаблоны",
+    "enterprise": "Прадпрыемства",
+    "deploy": "Разгарнуць",
+    "learn": "Вучыцца",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "Пошук па дакументацыі...",
+      "input": "Што вы шукаеце?",
+      "introduction": "Уводзіны",
+      "gettingStarted": "Пачатак",
+      "appRouter": "App Router",
+      "architecture": "Архітэктура",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "Даступнасць",
+      "activeTabs": {
+        "app": "Дадатак",
+        "pages": "Старонкі"
+      }
+    }
+  },
+  "main": {
+    "title": "React Framework для вэба",
+    "descriptionStart": "Выкарыстоўваецца некаторымі з найбуйнейшых кампаній свету, Next.js дазваляе ствараць",
+    "descriptionHighlight": "вэб-прыкладанні высокай якасці",
+    "descriptionEnd": "з выкарыстаннем магчымасцей React components.",
+    "started": "Пачаць",
+    "learn": "Вучыцца Next.js"
+  },
+  "footer": {
+    "resources": "Рэсурсы",
+    "docs": "Дакументацыя",
+    "supportPolicy": "Палітыка падтрымкі",
+    "learn": "Вучыцца",
+    "showcase": "Дэманстрацыя",
+    "blog": "Блог",
+    "team": "Каманда",
+    "analytics": "Аналітыка",
+    "nextjsConf": "Next.js Conf",
+    "previews": "Папярэдні прагляд",
+    "evals": "Ацэнкі",
+    "more": "Больш",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "Звяжыцеся з продажамі",
+    "community": "Супольнасць",
+    "github": "Github",
+    "releases": "Выпуски",
+    "telemetry": "Тэлеметрыя",
+    "governance": "Кіраванне",
+    "locale": "Мова & Рэгіён",
+    "aboutVercel": "Пра Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Праграмнае забеспячэнне з адкрытым кодам",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Юрыдычнае",
+    "privacyPolicy": "Палітыка прыватнасці",
+    "cookiePreferences": "Настройкі cookie",
+    "subscribeSuccess": "Дзякуй за падпіску!",
+    "subscribeTitle": "Падпішыцеся на нашу рассылку",
+    "subscribeDescription": "Будзьце ў курсе новых выпускоў і функцый, кіраўніцтваў і кейсаў.",
+    "subscribeButton": "Падпісацца"
+  },
+  "cookieBanner": {
+    "message": "Гэты сайт выкарыстоўвае тэхналогіі адсочвання. Вы можаце прыняць або адмовіцца ад выкарыстання гэтых тэхналогій.",
+    "deny": "Адмовіцца",
+    "acceptAll": "Прыняць усё",
+    "settings": "Налады згоды"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Асноўныя",
+      "description": "Асноўныя cookie і сэрвісы выкарыстоўваюцца для ўключэння ключавых функцый сайта і забеспячэння бяспекі."
+    },
+    "marketing": {
+      "name": "Маркетынг",
+      "description": "Маркетынгавыя cookie і сэрвісы выкарыстоўваюцца для прадастаўлення персаналізаванай рэкламы і прапаноў."
+    },
+    "analytics": {
+      "name": "Аналітыка",
+      "description": "Аналітычныя cookie і сэрвісы выкарыстоўваюцца для збору статыстычнай інфармацыі пра ўзаемадзеянне карыстальнікаў з сайтам."
+    },
+    "functional": {
+      "name": "Функцыянальныя",
+      "description": "Функцыянальныя cookie і сэрвісы прапануюць пашыраныя і персаналізаваныя функцыі, напрыклад, запамінанне мовы, памеру шрыфта, рэгіёну і наладжаных макетаў."
+    },
+    "title": "Ваша прыватнасць",
+    "description": "Гэты сайт выкарыстоўвае тэхналогіі адсочвання. Вы можаце прыняць або адмовіцца ад выкарыстання гэтых тэхналогій.",
+    "deny": "Адмовіцца",
+    "acceptAll": "Прыняць усё",
+    "save": "Захаваць",
+    "privacyPolicy": "Прачытайце, як мы апрацоўваем вашы дадзеныя ў",
+    "privacyPolicyLink": "Палітыка прыватнасці"
+  }
+}

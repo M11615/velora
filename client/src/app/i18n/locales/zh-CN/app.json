@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Vercel 出品的 Next.js —— React 框架"
+  },
+  "skipToContent": "跳到主要内容",
+  "header": {
+    "showcase": "案例展示",
+    "docs": "文档",
+    "blog": "博客",
+    "templates": "模板",
+    "enterprise": "企业版",
+    "deploy": "部署",
+    "learn": "学习",
+    "nextjsCommerce": "Next.js 商业版",
+    "github": "GitHub",
+    "search": {
+      "button": "搜索文档...",
+      "input": "您想查找什么？",
+      "introduction": "介绍",
+      "gettingStarted": "快速开始",
+      "appRouter": "App 路由",
+      "architecture": "架构",
+      "pagesRouter": "Pages 路由",
+      "apiReference": "API 参考",
+      "accessibility": "无障碍支持",
+      "activeTabs": {
+        "app": "应用",
+        "pages": "页面"
+      }
+    }
+  },
+  "main": {
+    "title": "构建 Web 的 React 框架",
+    "descriptionStart": "Next.js 被全球众多大型企业采用，助您构建",
+    "descriptionHighlight": "高质量的 Web 应用程序",
+    "descriptionEnd": "，基于强大的 React 组件。",
+    "started": "快速开始",
+    "learn": "学习 Next.js"
+  },
+  "footer": {
+    "resources": "资源",
+    "docs": "文档",
+    "supportPolicy": "支持政策",
+    "learn": "学习",
+    "showcase": "展示",
+    "blog": "博客",
+    "team": "团队",
+    "analytics": "分析",
+    "nextjsConf": "Next.js 大会",
+    "previews": "预览",
+    "evals": "评估",
+    "more": "更多",
+    "nextjsCommerce": "Next.js 商务",
+    "contactSales": "联系销售",
+    "community": "社区",
+    "github": "GitHub",
+    "releases": "发布",
+    "telemetry": "遥测",
+    "governance": "治理",
+    "locale": "语言和地区",
+    "aboutVercel": "关于 Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "开源软件",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "法律",
+    "privacyPolicy": "隐私政策",
+    "cookiePreferences": "Cookie 偏好",
+    "subscribeSuccess": "感谢您的订阅！",
+    "subscribeTitle": "订阅我们的新闻通讯",
+    "subscribeDescription": "获取最新发布、功能、指南和案例研究的更新。",
+    "subscribeButton": "订阅"
+  },
+  "cookieBanner": {
+    "message": "本网站使用跟踪技术。您可以选择同意或拒绝使用这些技术。",
+    "deny": "拒绝",
+    "acceptAll": "全部接受",
+    "settings": "设置偏好"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "必要",
+      "description": "必要的 Cookie 和服务用于启用网站核心功能，例如确保网站的安全性。"
+    },
+    "marketing": {
+      "name": "营销",
+      "description": "营销 Cookie 和服务用于提供个性化广告、促销和优惠。这些技术通过收集用户兴趣、偏好和在线活动信息来实现定向广告和营销活动。"
+    },
+    "analytics": {
+      "name": "分析",
+      "description": "分析 Cookie 和服务用于收集访客与网站交互的统计信息。这些技术提供关于网站使用情况、访客行为和站点性能的洞察，以帮助优化网站并提升用户体验。"
+    },
+    "functional": {
+      "name": "功能性",
+      "description": "功能性 Cookie 和服务用于提供增强和个性化的功能。这些技术提供附加功能和改进的用户体验，例如记住语言偏好、字体大小、区域选择和自定义布局。选择退出这些 Cookie 可能会使网站的某些服务或功能无法使用。"
+    },
+    "title": "您的隐私",
+    "description": "本网站使用跟踪技术。您可以选择同意或拒绝使用这些技术。",
+    "deny": "拒绝",
+    "acceptAll": "全部接受",
+    "save": "保存",
+    "privacyPolicy": "阅读我们如何处理您的数据，详情请见",
+    "privacyPolicyLink": "隐私政策"
+  }
+}

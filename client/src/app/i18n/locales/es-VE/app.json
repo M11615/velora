@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js por Vercel - El Framework de React"
+  },
+  "skipToContent": "Saltar al contenido",
+  "header": {
+    "showcase": "Vitrina",
+    "docs": "Documentación",
+    "blog": "Blog",
+    "templates": "Plantillas",
+    "enterprise": "Empresa",
+    "deploy": "Desplegar",
+    "learn": "Aprender",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "Buscar en la documentación...",
+      "input": "¿Qué estás buscando?",
+      "introduction": "Introducción",
+      "gettingStarted": "Comenzando",
+      "appRouter": "App Router",
+      "architecture": "Arquitectura",
+      "pagesRouter": "Pages Router",
+      "apiReference": "Referencia API",
+      "accessibility": "Accesibilidad",
+      "activeTabs": {
+        "app": "App",
+        "pages": "Páginas"
+      }
+    }
+  },
+  "main": {
+    "title": "El framework React para la web",
+    "descriptionStart": "Usado por algunas de las empresas más grandes del mundo, Next.js te permite crear",
+    "descriptionHighlight": "aplicaciones web de alta calidad",
+    "descriptionEnd": "con el poder de los componentes de React.",
+    "started": "Comenzar",
+    "learn": "Aprender Next.js"
+  },
+  "footer": {
+    "resources": "Recursos",
+    "docs": "Documentación",
+    "supportPolicy": "Política de soporte",
+    "learn": "Aprender",
+    "showcase": "Vitrina",
+    "blog": "Blog",
+    "team": "Equipo",
+    "analytics": "Analítica",
+    "nextjsConf": "Next.js Conf",
+    "previews": "Avances",
+    "evals": "Evaluaciones",
+    "more": "Más",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "Contactar ventas",
+    "community": "Comunidad",
+    "github": "Github",
+    "releases": "Versiones",
+    "telemetry": "Telemetría",
+    "governance": "Gobernanza",
+    "locale": "Idioma & Región",
+    "aboutVercel": "Acerca de Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Software de código abierto",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Legal",
+    "privacyPolicy": "Política de privacidad",
+    "cookiePreferences": "Preferencias de cookies",
+    "subscribeSuccess": "¡Gracias por suscribirte!",
+    "subscribeTitle": "Suscríbete a nuestro boletín",
+    "subscribeDescription": "Mantente actualizado sobre nuevas versiones y características, guías y estudios de caso.",
+    "subscribeButton": "Suscribirse"
+  },
+  "cookieBanner": {
+    "message": "Este sitio utiliza tecnologías de seguimiento. Puedes optar por aceptar o rechazar el uso de estas tecnologías.",
+    "deny": "Rechazar",
+    "acceptAll": "Aceptar todo",
+    "settings": "Configuración de consentimiento"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Esencial",
+      "description": "Las cookies y servicios esenciales se utilizan para habilitar las funciones principales del sitio web, como garantizar la seguridad del sitio."
+    },
+    "marketing": {
+      "name": "Marketing",
+      "description": "Las cookies y servicios de marketing se utilizan para entregar anuncios, promociones y ofertas personalizadas. Estas tecnologías permiten la publicidad dirigida mediante la recopilación de información sobre los intereses y actividades de los usuarios."
+    },
+    "analytics": {
+      "name": "Analítica",
+      "description": "Las cookies y servicios analíticos se utilizan para recopilar información estadística sobre cómo los visitantes interactúan con un sitio web, proporcionando información para mejorar la experiencia del usuario."
+    },
+    "functional": {
+      "name": "Funcional",
+      "description": "Las cookies y servicios funcionales se utilizan para ofrecer funcionalidades mejoradas y personalizadas, como recordar tus preferencias de idioma, tamaño de fuente, selección de región y diseños personalizados."
+    },
+    "title": "Tu privacidad",
+    "description": "Este sitio utiliza tecnologías de seguimiento. Puedes optar por aceptar o rechazar el uso de estas tecnologías.",
+    "deny": "Rechazar",
+    "acceptAll": "Aceptar todo",
+    "save": "Guardar",
+    "privacyPolicy": "Lee cómo manejamos tus datos en nuestra",
+    "privacyPolicyLink": "Política de privacidad"
+  }
+}

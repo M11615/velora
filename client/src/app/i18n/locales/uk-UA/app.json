@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js від Vercel - React Framework"
+  },
+  "skipToContent": "Перейти до контенту",
+  "header": {
+    "showcase": "Приклади",
+    "docs": "Документація",
+    "blog": "Блог",
+    "templates": "Шаблони",
+    "enterprise": "Корпорація",
+    "deploy": "Розгорнути",
+    "learn": "Вивчити",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "Пошук документації...",
+      "input": "Що ви шукаєте?",
+      "introduction": "Вступ",
+      "gettingStarted": "Початок роботи",
+      "appRouter": "App Router",
+      "architecture": "Архітектура",
+      "pagesRouter": "Pages Router",
+      "apiReference": "API Reference",
+      "accessibility": "Доступність",
+      "activeTabs": {
+        "app": "Додаток",
+        "pages": "Сторінки"
+      }
+    }
+  },
+  "main": {
+    "title": "React Framework для вебу",
+    "descriptionStart": "Використовується деякими з найбільших компаній світу, Next.js дозволяє створювати",
+    "descriptionHighlight": "якісні веб-додатки",
+    "descriptionEnd": "з потужністю компонентів React.",
+    "started": "Почати",
+    "learn": "Вивчити Next.js"
+  },
+  "footer": {
+    "resources": "Ресурси",
+    "docs": "Документація",
+    "supportPolicy": "Політика підтримки",
+    "learn": "Вивчити",
+    "showcase": "Приклади",
+    "blog": "Блог",
+    "team": "Команда",
+    "analytics": "Аналітика",
+    "nextjsConf": "Next.js Conf",
+    "previews": "Попередній перегляд",
+    "evals": "Оцінки",
+    "more": "Більше",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "Зв'язатися з відділом продажу",
+    "community": "Спільнота",
+    "github": "Github",
+    "releases": "Релізи",
+    "telemetry": "Телеметрія",
+    "governance": "Управління",
+    "locale": "Мова та регіон",
+    "aboutVercel": "Про Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Програмне забезпечення з відкритим кодом",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Юридична інформація",
+    "privacyPolicy": "Політика конфіденційності",
+    "cookiePreferences": "Налаштування cookie",
+    "subscribeSuccess": "Дякуємо за підписку!",
+    "subscribeTitle": "Підпишіться на нашу розсилку",
+    "subscribeDescription": "Будьте в курсі нових релізів та функцій, керівництв та кейсів.",
+    "subscribeButton": "Підписатися"
+  },
+  "cookieBanner": {
+    "message": "Цей сайт використовує технології відстеження. Ви можете погодитися або відмовитися від їх використання.",
+    "deny": "Відмовитися",
+    "acceptAll": "Прийняти всі",
+    "settings": "Налаштування згоди"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Основні",
+      "description": "Основні cookie та сервіси використовуються для включення ключових функцій сайту та забезпечення безпеки."
+    },
+    "marketing": {
+      "name": "Маркетинг",
+      "description": "Маркетингові cookie та сервіси використовуються для надання персоналізованої реклами та пропозицій."
+    },
+    "analytics": {
+      "name": "Аналітика",
+      "description": "Аналітичні cookie та сервіси використовуються для збору статистичної інформації про взаємодію користувачів із сайтом."
+    },
+    "functional": {
+      "name": "Функціональні",
+      "description": "Функціональні cookie та сервіси забезпечують розширені та персоналізовані функції, такі як запам'ятовування мови, розміру шрифту, регіону та індивідуальних макетів."
+    },
+    "title": "Ваша конфіденційність",
+    "description": "Цей сайт використовує технології відстеження. Ви можете погодитися або відмовитися від їх використання.",
+    "deny": "Відмовитися",
+    "acceptAll": "Прийняти всі",
+    "save": "Зберегти",
+    "privacyPolicy": "Прочитайте, як ми обробляємо ваші дані у нашій",
+    "privacyPolicyLink": "Політиці конфіденційності"
+  }
+}

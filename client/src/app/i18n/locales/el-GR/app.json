@@ -1,0 +1,105 @@
+{
+  "layout": {
+    "title": "Next.js από Vercel - Το React Framework"
+  },
+  "skipToContent": "Μετάβαση στο περιεχόμενο",
+  "header": {
+    "showcase": "Παρουσίαση",
+    "docs": "Τεκμηρίωση",
+    "blog": "Ιστολόγιο",
+    "templates": "Πρότυπα",
+    "enterprise": "Επιχείρηση",
+    "deploy": "Ανάπτυξη",
+    "learn": "Μάθετε",
+    "nextjsCommerce": "Next.js Commerce",
+    "github": "Github",
+    "search": {
+      "button": "Αναζήτηση τεκμηρίωσης...",
+      "input": "Τι ψάχνετε;",
+      "introduction": "Εισαγωγή",
+      "gettingStarted": "Ξεκινώντας",
+      "appRouter": "App Router",
+      "architecture": "Αρχιτεκτονική",
+      "pagesRouter": "Pages Router",
+      "apiReference": "Αναφορά API",
+      "accessibility": "Προσβασιμότητα",
+      "activeTabs": {
+        "app": "Εφαρμογή",
+        "pages": "Σελίδες"
+      }
+    }
+  },
+  "main": {
+    "title": "Το React Framework για τον ιστό",
+    "descriptionStart": "Χρησιμοποιείται από μερικές από τις μεγαλύτερες εταιρείες στον κόσμο, το Next.js σας επιτρέπει να δημιουργήσετε",
+    "descriptionHighlight": "υψηλής ποιότητας διαδικτυακές εφαρμογές",
+    "descriptionEnd": "με τη δύναμη των React components.",
+    "started": "Ξεκινήστε",
+    "learn": "Μάθετε Next.js"
+  },
+  "footer": {
+    "resources": "Πόροι",
+    "docs": "Τεκμηρίωση",
+    "supportPolicy": "Πολιτική Υποστήριξης",
+    "learn": "Μάθετε",
+    "showcase": "Παρουσίαση",
+    "blog": "Ιστολόγιο",
+    "team": "Ομάδα",
+    "analytics": "Αναλυτικά",
+    "nextjsConf": "Next.js Conf",
+    "previews": "Προεπισκοπήσεις",
+    "evals": "Αξιολογήσεις",
+    "more": "Περισσότερα",
+    "nextjsCommerce": "Next.js Commerce",
+    "contactSales": "Επικοινωνία Πωλήσεων",
+    "community": "Κοινότητα",
+    "github": "Github",
+    "releases": "Εκδόσεις",
+    "telemetry": "Τηλεμετρία",
+    "governance": "Διακυβέρνηση",
+    "locale": "Γλώσσα & Περιοχή",
+    "aboutVercel": "Σχετικά με το Vercel",
+    "nextjsVercel": "Next.js + Vercel",
+    "openSourceSoftware": "Λογισμικό Ανοιχτού Κώδικα",
+    "bluesky": "Bluesky",
+    "x": "X",
+    "legal": "Νομικά",
+    "privacyPolicy": "Πολιτική Απορρήτου",
+    "cookiePreferences": "Προτιμήσεις Cookies",
+    "subscribeSuccess": "Ευχαριστούμε για τη συνδρομή!",
+    "subscribeTitle": "Εγγραφείτε στο ενημερωτικό δελτίο μας",
+    "subscribeDescription": "Μείνετε ενημερωμένοι για νέες εκδόσεις και δυνατότητες, οδηγούς και μελέτες περιπτώσεων.",
+    "subscribeButton": "Εγγραφή"
+  },
+  "cookieBanner": {
+    "message": "Αυτός ο ιστότοπος χρησιμοποιεί τεχνολογίες παρακολούθησης. Μπορείτε να επιλέξετε να συμμετάσχετε ή να αρνηθείτε τη χρήση αυτών των τεχνολογιών.",
+    "deny": "Αρνηθείτε",
+    "acceptAll": "Αποδεχτείτε όλα",
+    "settings": "Ρυθμίσεις Συγκατάθεσης"
+  },
+  "consentModal": {
+    "essential": {
+      "name": "Απαραίτητο",
+      "description": "Τα απαραίτητα cookies και υπηρεσίες χρησιμοποιούνται για να ενεργοποιήσουν βασικές λειτουργίες του ιστότοπου, όπως η ασφάλεια."
+    },
+    "marketing": {
+      "name": "Marketing",
+      "description": "Τα cookies και οι υπηρεσίες marketing χρησιμοποιούνται για την παροχή εξατομικευμένων διαφημίσεων και προσφορών."
+    },
+    "analytics": {
+      "name": "Αναλυτικά",
+      "description": "Τα cookies και οι υπηρεσίες αναλυτικών χρησιμοποιούνται για τη συλλογή στατιστικών πληροφοριών σχετικά με τη χρήση του ιστότοπου."
+    },
+    "functional": {
+      "name": "Λειτουργικά",
+      "description": "Τα λειτουργικά cookies και οι υπηρεσίες προσφέρουν βελτιωμένες και εξατομικευμένες λειτουργίες, όπως η αποθήκευση γλώσσας, μεγέθους γραμματοσειράς, περιοχής και προσαρμοσμένων διατάξεων."
+    },
+    "title": "Το Απόρρητό σας",
+    "description": "Αυτός ο ιστότοπος χρησιμοποιεί τεχνολογίες παρακολούθησης. Μπορείτε να επιλέξετε να συμμετάσχετε ή να αρνηθείτε τη χρήση αυτών των τεχνολογιών.",
+    "deny": "Αρνηθείτε",
+    "acceptAll": "Αποδεχτείτε όλα",
+    "save": "Αποθήκευση",
+    "privacyPolicy": "Διαβάστε πώς διαχειριζόμαστε τα δεδομένα σας στην",
+    "privacyPolicyLink": "Πολιτική Απορρήτου"
+  }
+}

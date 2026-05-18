@@ -7,9 +7,9 @@ import { minify } from "terser";
 
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirectoryPath = dirname(currentFilePath);
-const environmentPathsFilePath = join(currentDirectoryPath, "./env-paths.txt");
-const deployInitialisationPathsFilePath = join(currentDirectoryPath, "./deploy-init-paths.txt");
-const logFileAbsolutePath = join(currentDirectoryPath, "./deploy-init-script-generator.log");
+const environmentPathsFilePath = join(currentDirectoryPath, "./environment-paths.txt");
+const deployInitialisationPathsFilePath = join(currentDirectoryPath, "./deploy-initialisation-paths.txt");
+const logFileAbsolutePath = join(currentDirectoryPath, "./deploy-initialisation-script-generator.log");
 const SCRIPT_TEMPLATES = {
   "mongo/create-user.js": (environment) => {
     return `

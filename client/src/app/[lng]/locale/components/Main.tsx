@@ -10,6 +10,8 @@ import { ResponsiveContextValue, useResponsiveContext } from "@/app/[lng]/compon
 export default function Main() {
   const { t }: I18nextInstance = useT("locale", {});
   const { width, isTabletScreen, isMobileScreen }: ResponsiveContextValue = useResponsiveContext();
+  const columnCount: number = isTabletScreen ? (isMobileScreen ? (width < FALLBACK_MOBILE_M_SCREEN_WIDTH ? 1 : 2) : 2) : 4;
+  const rowCount: number = Math.max(1, Math.ceil(languages.length / columnCount));
 
   const handleLanguageChange: (lang: string) => void = (lang: string): void => {
     setCookie(cookieName, lang);
@@ -22,7 +24,12 @@ export default function Main() {
         <h1 className="text-[var(--theme-fg-base)] text-2xl font-semibold mb-[25px]">
           {t("main.title")}
         </h1>
-        <nav className={`grid gap-x-[5vw] gap-y-[20px] ${isTabletScreen ? `${isMobileScreen ? `${width < FALLBACK_MOBILE_M_SCREEN_WIDTH ? "grid-cols-[1fr]" : "grid-cols-[1fr_1fr]"}` : "grid-cols-[1fr_1fr_1fr_1fr]"}` : "grid-cols-[1fr_1fr_1fr_1fr]"} justify-start`}>
+        <nav
+          className="grid grid-flow-col gap-x-[5vw] gap-y-[20px]"
+          style={{
+            gridTemplateRows: `repeat(${rowCount}, auto)`
+          }}
+        >
           {languages.map((lang: string): React.ReactNode => {
             const item = LANGUAGE_MAP[lang];
             if (!item) return null;

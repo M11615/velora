@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirectoryPath = dirname(currentFilePath);
 const workspacePathsFilePath = join(currentDirectoryPath, "./workspace-paths.txt");
-const logFileAbsolutePath = join(currentDirectoryPath, "./workspace-env-sync.log");
+const logFileAbsolutePath = join(currentDirectoryPath, "./workspace-environment-synchronize.log");
 const ENVIRONMENT_FILES = [
   { temporaryFileName: "temporary.env.development.local", environmentFileName: ".env.development.local" },
   { temporaryFileName: "temporary.env.production.local", environmentFileName: ".env.production.local" }

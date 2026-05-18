@@ -47,7 +47,7 @@ After installing dependencies (`yarn install`) and **before running any developm
 ### 1. Synchronize Workspace Environment
 
 ```bash
-node scripts/workspace-env-sync/workspace-env-sync.mjs
+node scripts/workspace-environment-synchronize/workspace-environment-synchronize.mjs
 ```
 
 This script is responsible for:
@@ -59,7 +59,7 @@ This script is responsible for:
 ### 2. Generate Deployment Initialisation Script
 
 ```bash
-node scripts/deploy-init-script-generator/deploy-init-script-generator.mjs
+node scripts/deploy-initialisation-script-generator/deploy-initialisation-script-generator.mjs
 ```
 
 This script is responsible for:

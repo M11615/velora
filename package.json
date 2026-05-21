@@ -1,7 +1,7 @@
 {
   "name": "velora",
   "private": true,
-  "packageManager": "yarn@4.14.1",
+  "packageManager": "yarn@4.15.0",
   "workspaces": [
     "server",
     "client"
@@ -26,6 +26,6 @@
     "kubernetes:delete": "kubectl delete -k ./deploy/kubernetes/base && kubectl delete -k ./deploy/kubernetes/pv"
   },
   "devDependencies": {
-    "turbo": "^2.9.9"
+    "turbo": "^2.9.14"
   }
 }

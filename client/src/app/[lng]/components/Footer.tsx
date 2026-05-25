@@ -44,7 +44,8 @@ export default function Footer(): React.ReactNode {
     { id: 5, href: "/", label: t("footer.releases") },
     { id: 6, href: "/", label: t("footer.telemetry") },
     { id: 7, href: "/", label: t("footer.governance") },
-    { id: 8, href: "/locale", label: t("footer.locale") }
+    { id: 8, href: "/", label: t("footer.ecosystemWorkingGroup") },
+    { id: 9, href: "/locale", label: t("footer.locale") }
   ];
   const aboutLinks: NavLink[] = [
     { id: 1, href: "/", label: t("footer.nextjsVercel") },

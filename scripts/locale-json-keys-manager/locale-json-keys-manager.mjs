@@ -9,10 +9,29 @@ const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirectoryPath = dirname(currentFilePath);
 const scanPathsFilePath = join(currentDirectoryPath, "./scan-paths.txt");
 const logFileAbsolutePath = join(currentDirectoryPath, "./locale-json-keys-manager.log");
+const stateFilePath = join(currentDirectoryPath, "./locale-json-keys-state.json");
 
 const appendLogMessage = (message) => {
   const timestamp = new Date().toISOString().replace("T", " ").split(".")[0];
   fs.appendFileSync(logFileAbsolutePath, `[${timestamp}] ${message}\n`);
+};
+
+const readState = () => {
+  try {
+    return JSON.parse(fs.readFileSync(stateFilePath, "utf-8"));
+  } catch {
+    return null;
+  }
+};
+
+const writeState = (state) => {
+  fs.writeFileSync(stateFilePath, JSON.stringify(state, null, 2));
+};
+
+const clearState = () => {
+  if (fs.existsSync(stateFilePath)) {
+    fs.unlinkSync(stateFilePath);
+  }
 };
 
 const getLocaleDirectories = (basePath) => {
@@ -36,12 +55,29 @@ const writeJsonFile = (filePath, json) => {
   fs.writeFileSync(filePath, JSON.stringify(json, null, 2) + "\n");
 };
 
-const setNestedValue = (object, keyPath, value) => {
+const setNestedValue = (object, keyPath, value, position) => {
   const keys = keyPath.split(".");
   let current = object;
   keys.forEach((key, index) => {
-    if (index === keys.length - 1) {
-      current[key] = value;
+    const isLast = index === keys.length - 1;
+    if (isLast) {
+      if (
+        position === null ||
+        position === undefined ||
+        !Number.isInteger(position)
+      ) {
+        current[key] = value;
+        return;
+      }
+      if (key in current) {
+        delete current[key];
+      }
+      const entries = Object.entries(current);
+      const safePosition = Math.max(0, Math.min(position, entries.length));
+      entries.splice(safePosition, 0, [key, value]);
+      const reordered = Object.fromEntries(entries);
+      Object.keys(current).forEach(k => delete current[k]);
+      Object.assign(current, reordered);
     } else {
       if (!current[key] || typeof current[key] !== "object") {
         current[key] = {};
@@ -79,21 +115,33 @@ const cleanupEmptyObjects = (object) => {
   }
 };
 
-const processAdd = async (basePath, fileName, keys, rl) => {
+const processAdd = async (basePath, fileName, keys, rl, resumeState) => {
   const locales = getLocaleDirectories(basePath);
-  for (const locale of locales) {
+  let startLocaleIndex = resumeState?.localeIndex ?? 0;
+  let startKeyIndex = resumeState?.keyIndex ?? 0;
+  for (let li = startLocaleIndex; li < locales.length; li++) {
+    const locale = locales[li];
     appendLogMessage(`PROCESSING LOCALE: ${locale}`);
     const filePath = join(basePath, locale, fileName);
     const json = fs.existsSync(filePath) ? readJsonFile(filePath) : {};
-    for (const key of keys) {
-      const value = await new Promise(resolve => {
-        rl.question(`Value for ${locale} -> ${key}: `, resolve);
+    for (let ki = (li === startLocaleIndex ? startKeyIndex : 0); ki < keys.length; ki++) {
+      const key = keys[ki];
+      writeState({
+        basePath,
+        fileName,
+        localeIndex: li,
+        keyIndex: ki
       });
-      setNestedValue(json, key, value);
+      const value = await askQuestion(rl, `Value for ${locale} -> ${key}: `);
+      const positionInput = await askQuestion(rl, `Position for ${locale} -> ${key} (empty = append): `);
+      const position = positionInput.trim() === "" ? null : parseInt(positionInput, 10);
+      setNestedValue(json, key, value, position);
       appendLogMessage(`KEY ADDED: ${key} -> ${filePath}`);
     }
     writeJsonFile(filePath, json);
+    startKeyIndex = 0;
   }
+  clearState();
 };
 
 const processRemove = (basePath, fileName, keys) => {
@@ -118,10 +166,13 @@ const processRemove = (basePath, fileName, keys) => {
 };
 
 const askQuestion = (rl, question) => {
-  return new Promise(resolve => rl.question(question, resolve));
+  return new Promise(resolve =>
+    rl.question(question, answer => resolve(answer.trim()))
+  );
 };
 
 const main = async () => {
+  const resumeState = readState();
   appendLogMessage("=====================================================================");
   appendLogMessage(`Locale JSON Keys Manager Started at ${new Date().toLocaleString()}`);
   appendLogMessage(`Scan paths file: ${scanPathsFilePath}`);
@@ -161,7 +212,7 @@ const main = async () => {
       continue;
     }
     if (action === "add") {
-      await processAdd(scanPath, fileName, keys, rl);
+      await processAdd(scanPath, fileName, keys, rl, resumeState);
     }
     if (action === "remove") {
       processRemove(scanPath, fileName, keys);

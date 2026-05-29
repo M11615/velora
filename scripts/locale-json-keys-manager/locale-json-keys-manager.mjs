@@ -25,7 +25,7 @@ const readState = () => {
 };
 
 const writeState = (state) => {
-  fs.writeFileSync(stateFilePath, JSON.stringify(state, null, 2));
+  fs.writeFileSync(stateFilePath, JSON.stringify(state, null, 2) + "\n");
 };
 
 const clearState = () => {

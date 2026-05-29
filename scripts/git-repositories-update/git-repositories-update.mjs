@@ -82,10 +82,17 @@ const rebuildShallowRepository = async (remoteUrl, repositoryPath) => {
       ["clone", "--progress", "--depth=1", remoteUrl, repositoryPath.split(/[/\\]/).pop()],
       { cwd: dirname(repositoryPath) }
     );
+    let lastProgress = "";
     child.stderr.on("data", (data) => {
-      process.stderr.write(data.toString());
+      const text = data.toString();
+      process.stderr.write(text);
+      const lines = text.split(/\r|\n/).filter(Boolean);
+      if (lines.length > 0) {
+        lastProgress = lines[lines.length - 1];
+      }
     });
     child.on("close", (code) => {
+      appendLogMessage(`Git final progress: ${lastProgress}`);
       if (code === 0) {
         resolve();
       } else {
@@ -130,7 +137,7 @@ const main = async () => {
         { cwd: repositoryPath }
       );
       const isFullHistory = fullHistoryRepositories.has(repositoryPath);
-      if (!isFullHistory) {
+      if (!isFullHistory && gitSizeMB > GIT_SIZE_LIMIT_MB) {
         await rebuildShallowRepository(remoteUrl.trim(), repositoryPath);
         successfulRepositoryCount++;
         continue;

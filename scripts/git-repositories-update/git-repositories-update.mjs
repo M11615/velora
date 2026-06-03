@@ -13,7 +13,6 @@ const repositoryListFilePath = join(currentDirectoryPath, "./repositories.txt");
 const fullHistoryRepositoryFilePath = join(currentDirectoryPath, "./full-history-repositories.txt");
 const logFileAbsolutePath = join(currentDirectoryPath, "./git-repositories-update.log");
 const stateFilePath = join(currentDirectoryPath, "./git-repositories-update-state.json");
-const GIT_SIZE_LIMIT_MB = 512;
 
 const appendLogMessage = (message) => {
   const timestamp = new Date().toISOString().replace("T", " ").split(".")[0];
@@ -73,35 +72,20 @@ const getGitSizeMB = (repositoryPath) => {
   }
 };
 
-const rebuildShallowRepository = async (remoteUrl, repositoryPath) => {
-  appendLogMessage(`Git size too large, rebuilding shallow repository: ${repositoryPath}`);
-  fs.rmSync(repositoryPath, { recursive: true, force: true });
-  await new Promise((resolve, reject) => {
-    const child = spawn(
-      "git",
-      ["clone", "--progress", "--depth=1", remoteUrl, repositoryPath.split(/[/\\]/).pop()],
-      { cwd: dirname(repositoryPath) }
-    );
-    let lastProgress = "";
-    child.stderr.on("data", (data) => {
-      const text = data.toString();
-      process.stderr.write(text);
-      const lines = text.split(/\r|\n/).filter(Boolean);
-      if (lines.length > 0) {
-        lastProgress = lines[lines.length - 1];
-      }
-    });
-    child.on("close", (code) => {
-      appendLogMessage(`Git final progress: ${lastProgress}`);
-      if (code === 0) {
-        resolve();
-      } else {
-        reject(new Error(`git clone exited with code ${code}`));
-      }
-    });
-    child.on("error", reject);
-  });
-  appendLogMessage(`Rebuilt shallow repository: ${repositoryPath}`);
+const runGitCommand = async (cmd, cwd, label) => {
+  try {
+    appendLogMessage(`Running: ${label}`);
+    const { stdout } = await executeCommandAsync(cmd, { cwd });
+    const output = stdout?.trim();
+    if (output) {
+      appendLogMessage(output);
+    } else {
+      appendLogMessage(`Success: ${label}: OK (no output)`);
+    }
+  } catch (error) {
+    appendLogMessage(`Failed: ${label}: ${error.message}`);
+    throw error;
+  }
 };
 
 const main = async () => {
@@ -130,41 +114,25 @@ const main = async () => {
     appendLogMessage(`[${repositoryIndex + 1}/${totalRepositoryCount}] Processing repository: ${repositoryPath}`);
     appendLogMessage("-------------------------------------------------------------");
     if (fs.existsSync(join(repositoryPath, ".git"))) {
-      const gitSizeMB = getGitSizeMB(repositoryPath);
-      appendLogMessage(`Git size: ${gitSizeMB.toFixed(2)} MB`);
-      const { stdout: remoteUrl } = await executeCommandAsync(
-        "git remote get-url origin",
-        { cwd: repositoryPath }
-      );
-      const isFullHistory = fullHistoryRepositories.has(repositoryPath);
-      if (!isFullHistory && gitSizeMB > GIT_SIZE_LIMIT_MB) {
-        await rebuildShallowRepository(remoteUrl.trim(), repositoryPath);
-        successfulRepositoryCount++;
-        continue;
-      }
       let isUpdateSuccessful = false;
       let retryCount = 0;
+      const gitSizeMB = getGitSizeMB(repositoryPath);
+      appendLogMessage(`Git size: ${gitSizeMB.toFixed(2)} MB`);
       while (!isUpdateSuccessful) {
         try {
+          const { stdout: remoteUrl } = await executeCommandAsync(
+            "git remote get-url origin",
+            { cwd: repositoryPath }
+          );
+          const isFullHistory = fullHistoryRepositories.has(repositoryPath);
           if (isFullHistory) {
             appendLogMessage("Mode: FULL HISTORY (git pull)");
-            const { stdout: pullStdout, stderr: pullStderr } = await executeCommandAsync("git pull", { cwd: repositoryPath });
-            if (pullStderr && !pullStdout.trim()) throw new Error(pullStderr);
-            appendLogMessage(pullStdout.trim());
+            await runGitCommand("git pull", repositoryPath, "git pull");
           } else {
             appendLogMessage("Mode: SHALLOW (rebuild latest snapshot)");
-            const { stdout: fetchStdout, stderr: fetchStderr } = await executeCommandAsync(
-              "git fetch --depth=1 origin",
-              { cwd: repositoryPath }
-            );
-            if (fetchStderr && !fetchStdout.trim()) throw new Error(fetchStderr);
-            appendLogMessage(fetchStdout.trim());
-            const { stdout: resetStdout, stderr: resetStderr } = await executeCommandAsync(
-              "git reset --hard origin/HEAD",
-              { cwd: repositoryPath }
-            );
-            if (resetStderr && !resetStdout.trim()) throw new Error(resetStderr);
-            appendLogMessage(resetStdout.trim());
+            await runGitCommand("git fetch --depth=1 origin", repositoryPath, "git fetch");
+            await runGitCommand("git reset --hard origin/HEAD", repositoryPath, "git reset");
+            await runGitCommand("git gc --prune=now", repositoryPath, "git gc");
           }
           appendLogMessage(`Update completed - Remote: ${remoteUrl.trim()}, Local: ${repositoryPath}`);
           successfulRepositoryCount++;

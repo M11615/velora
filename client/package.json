@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/env": "16.2.7",
+    "@next/env": "16.2.9",
     "accept-language": "^3.0.20",
-    "i18next": "^26.3.0",
+    "i18next": "^26.3.1",
     "i18next-browser-languagedetector": "^8.2.1",
     "i18next-resources-to-backend": "^1.2.1",
-    "next": "16.2.7",
+    "next": "16.2.9",
     "next-i18next": "^16.0.7",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
@@ -22,14 +22,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
-    "@tailwindcss/postcss": "^4.3.0",
-    "@types/node": "^24.12.4",
-    "@types/react": "^19.2.16",
+    "@tailwindcss/postcss": "^4.3.1",
+    "@types/node": "^24.13.2",
+    "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "cross-env": "^10.1.0",
-    "eslint": "^10.4.1",
-    "eslint-config-next": "16.2.7",
-    "tailwindcss": "^4.3.0",
+    "eslint": "^10.5.0",
+    "eslint-config-next": "16.2.9",
+    "tailwindcss": "^4.3.1",
     "typescript": "^6.0.3"
   }
 }

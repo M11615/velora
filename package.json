@@ -18,12 +18,7 @@
     "docker:start": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml start",
     "docker:stop": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml stop",
     "docker:restart": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml restart",
-    "docker:push": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml push",
-    "docker:rm": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml rm",
-    "kubernetes:mongo-secret": "kubectl create secret generic mongo-configuration --from-env-file=./server/.env.production.local",
-    "kubernetes:mongo-configmap": "kubectl create configmap mongo-initialisation --from-file=./deploy/initialisation/mongo",
-    "kubernetes:apply": "kubectl apply -k ./deploy/kubernetes/pv && kubectl apply -k ./deploy/kubernetes/base",
-    "kubernetes:delete": "kubectl delete -k ./deploy/kubernetes/base && kubectl delete -k ./deploy/kubernetes/pv"
+    "docker:rm": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml rm"
   },
   "devDependencies": {
     "turbo": "^2.9.18"

@@ -1,9 +1,9 @@
 # Velora
 
 Velora is a full-stack TypeScript monorepo that combines a modern web client with a structured backend service.
-The project is designed with modularity, internationalization, containerized development, and Kubernetes deployment in mind.
+The project is designed with modularity, internationalization, containerized development, and Docker-based deployment in mind.
 
-This repository contains everything required to run the server and client either locally, via Docker, or in a Kubernetes cluster.
+This repository contains everything required to run the server and client either locally or via Docker.
 
 ---
 
@@ -14,7 +14,6 @@ This repository contains everything required to run the server and client either
 - **Client-side application** built with Next.js
 - **Internationalization (i18next)** support for multiple locales
 - **Docker & Docker Compose** support for local development
-- **Kubernetes** manifests for container orchestration
 - **Yarn & Turborepo** for dependency and task management
 
 ---
@@ -26,7 +25,6 @@ To work with this project locally, you will need:
 - **Node.js** (LTS recommended)
 - **Yarn**
 - **Docker** (optional, recommended for consistent environments)
-- **Kubectl** and **Kubernetes cluster** (optional, required for Kubernetes deployment)
 
 ---
 
@@ -66,7 +64,7 @@ This script is responsible for:
 
 - Reading the synchronized environment configuration
 - Generating deployment initialisation scripts
-- Preparing runtime initialisation logic for Docker / Kubernetes deployment
+- Preparing runtime initialisation logic for Docker-based deployment
 
 ### Why this is required
 
@@ -74,7 +72,7 @@ These steps ensure:
 
 - Consistent environment configuration across services
 - Correct generation of deployment initialization scripts
-- Stable Docker and Kubernetes behavior
+- Stable Docker runtime behavior
 - Prevention of missing or incorrect environment setup
 
 Skipping these steps may result in:
@@ -98,22 +96,9 @@ yarn docker:build
 yarn docker:up
 ```
 
-This will start all required services defined in `./deploy/docker/docker-compose.yaml`.
+This will start all required services defined in `./deploy/docker/docker-compose.
 
-### Running with Kubernetes
-
-You can deploy Velora to a Kubernetes cluster using Kustomize:
-
-```bash
-yarn docker:push
-yarn kubernetes:mongo-secret
-yarn kubernetes:mongo-configmap
-yarn kubernetes:apply
-```
-
-This will apply all resources defined in `./deploy/kubernetes/base/kustomization.yaml` and `./deploy/kubernetes/pv/kustomization.yaml`.
-
-### Local Development (Without Docker and Kubernetes)
+### Local Development (Without Docker)
 
 You may also run the server and client independently.
 

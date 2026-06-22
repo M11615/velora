@@ -18,7 +18,6 @@ export default function Page(): React.ReactNode {
     const fetchHello = async () => {
       const response = await getHello(i18n);
       if (response.ok) {
-        console.log(response);
         const responseString: string = await response.text();
         console.log(responseString);
       }

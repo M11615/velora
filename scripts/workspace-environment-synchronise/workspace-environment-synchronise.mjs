@@ -68,9 +68,9 @@ const main = () => {
       .filter(line => line && !line.startsWith("#"));
   }
   if (workspacePaths.length === 0) {
-    appendLogMessage(`WARNING: No valid workspace paths found in ${workspacePathsFilePath}, using ../../apps/server and ../../apps/web as default`);
-    console.warn(`No valid workspace paths found in ${workspacePathsFilePath}, using ../../apps/server and ../../apps/web as default`);
-    workspacePaths = ["../../apps/server", "../../apps/web"];
+    appendLogMessage(`WARNING: No valid workspace paths found in ${workspacePathsFilePath}, using ../../apps/server, ../../apps/web and ../../apps/app as default`);
+    console.warn(`No valid workspace paths found in ${workspacePathsFilePath}, using ../../apps/server, ../../apps/web and ../../apps/app as default`);
+    workspacePaths = ["../../apps/server", "../../apps/web", "../../apps/app"];
   }
   for (const workspacePath of workspacePaths) {
     processWorkspaceDirectory(workspacePath);

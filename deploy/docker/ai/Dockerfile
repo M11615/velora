@@ -3,7 +3,7 @@ FROM python:3.14-slim
 WORKDIR /opt/velora
 
 RUN mkdir .wheels
-COPY ./.wheels ./.wheels
+COPY ./apps/ai/.wheels ./.wheels
 
 RUN pip install ./.wheels/*.whl
 

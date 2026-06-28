@@ -77,13 +77,13 @@ Activate the virtual environment:
 source ./.venv/bin/activate
 
 # Windows
-./.venv/Scripts/Activate.ps1
+. ./.venv/Scripts/Activate.ps1
 ```
 
 Then install Python dependencies:
 
 ```bash
-pip install -r ./requirements.txt
+pip install --requirement ./requirements.txt
 ```
 
 ---

@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "build": "pip wheel -r ./requirements.txt -w ./.wheels",
+    "build": "pip wheel --requirement ./requirements.txt --wheel-dir ./.wheels --python-version 314",
     "dev": "uvicorn main:app --reload --host 0.0.0.0 --port 8000"
   }
 }

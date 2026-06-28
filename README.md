@@ -83,7 +83,7 @@ source ./.venv/bin/activate
 Then install Python dependencies:
 
 ```bash
-pip install --requirement ./requirements.txt
+python -m pip install --requirement ./requirements.txt
 ```
 
 ---

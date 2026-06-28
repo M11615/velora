@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 const currentFilePath = fileURLToPath(import.meta.url);
 const currentDirectoryPath = dirname(currentFilePath);
 const workspacePathsFilePath = join(currentDirectoryPath, "./workspace-paths.txt");
-const logFileAbsolutePath = join(currentDirectoryPath, "./workspace-environment-synchronize.log");
+const logFileAbsolutePath = join(currentDirectoryPath, "./workspace-environment-synchronise.log");
 const ENVIRONMENT_FILES = [
   { temporaryFileName: "temporary.env.development.local", environmentFileName: ".env.development.local" },
   { temporaryFileName: "temporary.env.production.local", environmentFileName: ".env.production.local" }
@@ -56,7 +56,7 @@ const processWorkspaceDirectory = (workspaceDirectory) => {
 
 const main = () => {
   appendLogMessage("=====================================================================");
-  appendLogMessage(`Workspace Environment Synchronize Started at ${new Date().toLocaleString()}`);
+  appendLogMessage(`Workspace Environment Synchronise Started at ${new Date().toLocaleString()}`);
   appendLogMessage(`Workspace paths file: ${workspacePathsFilePath}`);
   appendLogMessage("=====================================================================");
   let workspacePaths = [];
@@ -77,7 +77,7 @@ const main = () => {
   }
   appendLogMessage("");
   appendLogMessage("=====================================================================");
-  appendLogMessage(`Workspace Environment Synchronize Completed at ${new Date().toLocaleString()}`);
+  appendLogMessage(`Workspace Environment Synchronise Completed at ${new Date().toLocaleString()}`);
   appendLogMessage(`Processed Workspace Count: ${workspacePaths.length}`);
   appendLogMessage("=====================================================================");
   console.log(`Log saved to: ${logFileAbsolutePath}`);

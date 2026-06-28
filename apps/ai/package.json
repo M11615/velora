@@ -4,6 +4,6 @@
   "private": true,
   "scripts": {
     "build": "python -m pip wheel --requirement ./requirements.txt --wheel-dir ./.wheels",
-    "dev": "python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000"
+    "dev": "python -m uvicorn src.main:app --reload --host 0.0.0.0 --port 8000"
   }
 }

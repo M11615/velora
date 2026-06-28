@@ -54,10 +54,9 @@ services:
       - "3001:3001"
     networks:
       - velora-network
-    extra_hosts:
-      - "server:host-gateway"
     depends_on:
       - velora-server
+      - velora-ai
     restart: no
 
 volumes:

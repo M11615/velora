@@ -197,6 +197,8 @@ cd ./apps/app
 yarn dev
 ```
 
+> **Note:** In this mode, all Bridge calls, device capabilities, and Tauri APIs are unavailable. Only static UI can be previewed. Use `yarn tauri dev` for any feature that requires the native shell.
+
 ---
 
 ## Building
@@ -242,6 +244,8 @@ To build the frontend UI only (outputs static files to `./apps/app/dist/`, no Ru
 cd ./apps/app
 yarn build
 ```
+
+> **Note:** This produces a static web bundle only and does not include the native shell. Use this solely for inspecting the compiled frontend output.
 
 To build the full native application for all target platforms (Linux, Windows, macOS, Android, iOS), the Tauri application is built via GitHub Actions. Push to the repository to trigger the build pipeline. Build artefacts are available for download from the Actions tab.
 

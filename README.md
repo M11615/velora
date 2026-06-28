@@ -55,7 +55,7 @@ To work with this project locally, you will need:
 
 ## Installation
 
-### 1. Install JavaScript/TypeScript dependencies
+### 1. Install Node.js dependencies
 
 Install all workspace dependencies from the repository root:
 

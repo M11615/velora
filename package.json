@@ -3,22 +3,21 @@
   "private": true,
   "packageManager": "yarn@4.17.0",
   "workspaces": [
-    "server",
-    "client"
+    "apps/*"
   ],
   "scripts": {
     "set-version": "yarn set version latest",
     "upgrade": "yarn upgrade-interactive",
-    "build": "turbo run build --concurrency=3",
-    "dev": "turbo run dev --concurrency=3",
-    "docker:pull": "docker pull node:24-alpine && docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml pull",
-    "docker:build": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml build",
-    "docker:up": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml up -d",
-    "docker:down": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml down",
-    "docker:start": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml start",
-    "docker:stop": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml stop",
-    "docker:restart": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml restart",
-    "docker:rm": "docker compose --env-file ./server/.env.production.local -f ./deploy/docker/docker-compose.yaml rm"
+    "build": "turbo run build --concurrency=5",
+    "dev": "turbo run dev --concurrency=5",
+    "docker:pull": "docker pull node:24-alpine && docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml pull",
+    "docker:build": "docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml build",
+    "docker:up": "docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml up -d",
+    "docker:down": "docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml down",
+    "docker:start": "docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml start",
+    "docker:stop": "docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml stop",
+    "docker:restart": "docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml restart",
+    "docker:rm": "docker compose --env-file ./apps/server/.env.production.local -f ./deploy/docker/docker-compose.yaml rm"
   },
   "devDependencies": {
     "turbo": "^2.9.18"

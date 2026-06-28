@@ -21,3 +21,12 @@
 # deploy initialisation directory
 deploy/initialisation/*
 !deploy/initialisation/.gitkeep
+
+# venv
+.venv
+
+# wheel
+.wheels
+
+# pycache
+__pycache__

@@ -30,13 +30,26 @@ services:
       - velora-mongo
     restart: no
 
-  velora-client:
-    image: m11615/velora-client:latest
+  velora-ai:
+    image: m11615/velora-ai:latest
     build:
       context: ../..
-      dockerfile: ./deploy/docker/client/Dockerfile
+      dockerfile: ./deploy/docker/ai/Dockerfile
     pull_policy: never
-    container_name: velora-client
+    container_name: velora-ai
+    ports:
+      - "8000:8000"
+    networks:
+      - velora-network
+    restart: no
+
+  velora-web:
+    image: m11615/velora-web:latest
+    build:
+      context: ../..
+      dockerfile: ./deploy/docker/web/Dockerfile
+    pull_policy: never
+    container_name: velora-web
     ports:
       - "3001:3001"
     networks:

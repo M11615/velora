@@ -4,17 +4,17 @@ WORKDIR /opt/velora
 
 COPY ./yarn.lock .
 COPY ./.yarnrc.yml .
-COPY ./client/package.json .
-COPY ./client/.env.production.local .
+COPY ./apps/web/package.json .
+COPY ./apps/web/.env.production.local .
 
 RUN mkdir node_modules
 COPY ./node_modules ./node_modules
 
 RUN mkdir .next
-COPY ./client/.next ./.next
+COPY ./apps/web/.next ./.next
 
 RUN mkdir public
-COPY ./client/public ./public
+COPY ./apps/web/public ./public
 
 EXPOSE 3001
 

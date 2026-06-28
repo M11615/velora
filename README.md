@@ -143,7 +143,17 @@ Skipping these steps may result in:
 
 ### Running backend services with Docker
 
-The easiest way to run the server and AI backend is via Docker Compose:
+The easiest way to run the server and AI backend is via Docker Compose. Before building, ensure the AI virtual environment is activated so that the Python wheel can be compiled:
+ 
+```bash
+# Linux / macOS
+source ./apps/ai/.venv/bin/activate
+
+# Windows
+. ./apps/ai/.venv/Scripts/Activate.ps1
+```
+ 
+Then run:
 
 ```bash
 yarn build

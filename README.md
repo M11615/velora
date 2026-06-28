@@ -86,6 +86,12 @@ Then install Python dependencies:
 python -m pip install --requirement ./requirements.txt
 ```
 
+Once done, deactivate the virtual environment:
+
+```bash
+deactivate
+```
+
 ---
 
 ## Initialisation (Important)
